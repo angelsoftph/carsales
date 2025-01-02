@@ -1,0 +1,112 @@
+/**
+ * Theme Name:     Candy Cars
+ * Author:         Fred
+ * Template:       twentynineteen
+ * Text Domain:	   candycars
+ * Description:    The best theme in the entire Milky Way galaxy.
+ */
+
+/* General Styles */
+body,
+form,
+input,
+select {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+h1::before,
+h2::before {
+  content: none !important;
+}
+
+h4 {
+  margin: 0 0 10px;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+#logo {
+  background-image: url("assets/img/logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin-left: 30px;
+  height: 100px;
+  width: 175px;
+  text-indent: -999em;
+}
+
+.featured,
+.latest {
+  margin: 50px 0 0 !important;
+}
+
+.padding-0 {
+  padding: 0px !important;
+}
+
+.sale-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+#footer p {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#featured-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.strike {
+  text-decoration: line-through !important;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.no-results {
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media (max-width: 991px) {
+  #logo {
+    margin: 20px auto 0;
+  }
+
+  #primary-menu {
+    float: none;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .used-cars-carousel .carousel-caption-overlay h2 {
+    font-size: 20px;
+  }
+
+  .used-cars-carousel .carousel-caption-overlay a {
+    font-size: 14px;
+  }
+}
